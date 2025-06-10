@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ccf1a9;
+  border: 5px solid #176304;
+  color: #580404;
+  width: 25%;
+  height: 60%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  text-align: center;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  text-shadow: none;
+  text-overflow: clip;
+  text-indent: 0;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: #f4f4fa;
+  border: 5px solid #b5cca2;
+}
+
+
+.h2 {
+  color: #490505;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  width: 30%;
+  height: 10%;
+  max-width: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: rgb(13, 66, 66);
+}
+
+.input-group,  .label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: inline;
+  margin-bottom: 10px;
+} 
+
+.input_field {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-weight:500;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.submit_button {
+  background-color: #070707;
   color: white;
+  margin-top: 20px;
+  margin-left: 95px;
+  margin-right: 50px;
+  padding: 12px;
+  display: flex;
+  flex-direction: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.result {
+  margin-top: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #5c8104;
+  color: #f4f4fa;
+  font-size: 1rem;
+  font-weight: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 99.9%;
+  max-width: 400px;
+  display:block;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
