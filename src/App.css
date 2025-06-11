@@ -1,24 +1,18 @@
 .container {
-  margin: 0;
-  background-color: #bedba3;
-  border: 5px solid #176304;
-  color: #9c8501;
-  width: 40%;
-  height: 60%;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  text-align: center;
-  line-height: 1;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: none;
-  text-shadow: none;
-  text-overflow: clip;
-  text-indent: 0;
+  height: 100vh;
+  background-color: #c2f1ac;
+  border: 2px solid #b0c79d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+  z-index: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo {
