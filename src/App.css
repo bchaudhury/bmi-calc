@@ -1,10 +1,8 @@
 .container {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #ccf1a9;
+  background-color: #bedba3;
   border: 5px solid #176304;
-  color: #580404;
+  color: #9c8501;
   width: 25%;
   height: 60%;
   border-radius: 10px;
@@ -27,40 +25,31 @@
   height: 50px;
   width: 50px;
   display: block;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 5px auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   background-color: #f4f4fa;
-  border: 5px solid #b5cca2;
+  border: 2px solid #b5cca2;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
 }
 
 
 .h2 {
-  color: #490505;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: grid;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 15px;
-  width: 30%;
-  height: 10%;
-  max-width: 400px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
-  color: rgb(13, 66, 66);
+  color: #f8c007;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .input-group,  .label {
-  font-weight: 600;
-  color: #333;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #275302;
   margin-bottom: 5px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: inline;
@@ -68,63 +57,56 @@
 } 
 
 .input_field {
-  width: 50%;
+  display: block;
+  width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #b5cca2;
   border-radius: 5px;
-  font-weight:500;
-  text-align: center;
   font-size: 1rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.5;
+  outline: none;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f4f4fa;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .submit_button {
-  background-color: #070707;
+  padding: 20px 20px;
+  background-color: #013003;
   color: white;
-  margin-top: 20px;
-  margin-left: 95px;
-  margin-right: 50px;
-  padding: 12px;
-  display: flex;
-  flex-direction: block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  align-items: center;
-  justify-content: center;
-  place-content: center;
-  text-decoration: none;
-  text-align: center;
   border: none;
   border-radius: 5px;
-  width: 100%;
-  max-width: 200px;
-  box-sizing: border-box;
-  font-weight: 800;
-  font-size: 1rem;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .result {
-  margin-top: 15px;
-  border: 2px solid #ccc;
+  background-color: #f8e005;
   border-radius: 5px;
-  background-color: #5c8104;
-  color: #f4f4fa;
+  max-width: 800px;
   font-size: 1rem;
-  font-weight: 100px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #050a02;
   text-align: center;
-  width: 99.9%;
-  max-width: 400px;
-  display:block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .error {
   color: red;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 2px;
   text-align: center;

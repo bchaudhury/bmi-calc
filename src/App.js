@@ -10,8 +10,12 @@ const App = () => {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to meters
 
+
     if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
       document.getElementById('error-message').innerText = 'Please enter valid weight and height.';
+      document.getElementById('bmi').innerText = '0';
+      document.getElementById('category-text').innerText = 'Unknown';
+      document.getElementById('error-message').style.color = 'red';
       return;
     } else {
       document.getElementById('error-message').innerText = '';
@@ -38,6 +42,7 @@ const App = () => {
 
       <div className='container'>
         <img src={Logo} alt='Logo' className='logo' />
+        <h2> BMI Check</h2>
         <form>
           <div className='input-group'>
             <label htmlFor='weight'>Weight (kg): </label>
@@ -54,7 +59,7 @@ const App = () => {
             <h3>Your BMI: <span id='bmi'>0</span></h3>
             <p id='category'>Category: <span id='category-text'>Unknown</span></p>
           </div>
-          <div className='error' id='error-message'></div>
+         <div className='error' id='error-message' ></div>
         </form>  
       </div>
     </div>
